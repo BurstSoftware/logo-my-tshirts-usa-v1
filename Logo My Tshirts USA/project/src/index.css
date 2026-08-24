@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-ink-700 antialiased bg-white;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display text-ink-950;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 disabled:opacity-60 disabled:pointer-events-none;
+  }
+  .btn-primary {
+    @apply btn bg-brand-600 text-white shadow-soft hover:bg-brand-700 hover:shadow-glow active:scale-[0.98] px-5 py-2.5 text-sm;
+  }
+  .btn-secondary {
+    @apply btn bg-white text-ink-800 ring-1 ring-ink-200 hover:ring-brand-300 hover:text-brand-700 hover:bg-brand-50 px-5 py-2.5 text-sm;
+  }
+  .btn-ghost {
+    @apply btn text-ink-600 hover:text-brand-700 hover:bg-brand-50 px-3 py-2 text-sm;
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-700 ring-1 ring-brand-100;
+  }
+  .card {
+    @apply rounded-2xl bg-white ring-1 ring-ink-100 shadow-card;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .bg-grid {
+    background-image: linear-gradient(to right, rgba(16,24,40,0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(16,24,40,0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .mask-fade-b {
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

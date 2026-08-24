@@ -1,4 +1,5 @@
-T-Shirts
+# T-Shirts
+
 Polos/Knits
 Sweatshirts/Fleece
 Caps
@@ -12,7 +13,7 @@ Personal Protection
 Ladies
 Youth
 
-Top Picks
+# Top Picks
 
 T - Shirt
 Polos

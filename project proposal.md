@@ -1020,9 +1020,8 @@ Production Intelligence
 For acceptance or questions, please contact:
 
 **Project Lead**  
-Digital Infrastructure Solutions  
-Email: [contact email]  
-Phone: [contact phone]  
+Burst Software Development 
+Email: info@burstsoftwaredevelopment
 
 ---
 
